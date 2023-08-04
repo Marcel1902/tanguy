@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.col-gauche{
+    margin-left: 6%;
+}
+
+.col-gauche h1{
+    font-size: 90px;
+    color: aqua;
+    line-height: 110px;
+    float: left;
+}
+
+.col-droite{
+    float: right;
+    margin: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.col-droite p{
+    font-size: 18px;
+    color: aqua;
+    font-weight: 500;
+    margin: 15px;
+}
+
+#btnplay{
+    width: 80px;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 50px;
+    }
+    .col-droite{
+        margin-right: 100px;
+    }  
+}
+
+@media (max-width:991px){
+    .navbar ul li{
+        font-size: 10px;
+        padding: 2px 0;
+        margin-right: 400px;
+        display: inline-block;
+        padding-left: 0;
+    }
+}
+
+@media(max-width:768px){
+    .col-droite{
+        text-align: center;
+        margin-right: 200px;
+        padding-left: 0;
+    }
+    .col-gauche{
+        font-size: 50px;
+    }
+}
+
+.playlist{
+    margin-left: 70%;
+    border: 1px solid aqua;
+    padding: 10px;
+    background: transparent;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.playlist a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.playlist a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
